@@ -34,11 +34,16 @@ getId('donationBtn').addEventListener('click', function(){
 // Donate button clicked
 
 
-donateBtn('NoakhaliDonateBtn', 'inputNoakhali', 'donationAmountNoakhali', 'balance');
+donateBtn('NoakhaliDonateBtn', 'inputNoakhali', 'donationAmountNoakhali', 'balance', 'noakhaliCard');
 
-donateBtn('feniDonateBtn', 'feniInput', 'donationAmountFeni', 'balance');
+donateBtn('feniDonateBtn', 'feniInput', 'donationAmountFeni', 'balance','feniCard');
 
-donateBtn('quotaDonationBtn', 'quotaInput', 'donationAmountQuota', 'balance');
+donateBtn('quotaDonationBtn', 'quotaInput', 'donationAmountQuota', 'balance', 'quotaCard');
+
+
+getId('closeModal').addEventListener('click',function(){
+    getId('modal').classList.add('hidden');
+})
 
 
 
