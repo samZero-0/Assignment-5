@@ -49,7 +49,7 @@
 
         <div class="flex gap-2 items-center lg:pr-10 lg:w-1/4 lg:justify-start ">
             <img src="./assets/coin.png" alt="">
-            <p class="text-xl font-semibold" id="balance">5500</p> <span class="text-xl font-semibold">BDT</span>
+            <p class="text-xl font-semibold" id="balance">100</p> <span class="text-xl font-semibold">BDT</span>
         </div>
 
 
@@ -60,14 +60,15 @@
         <div class="lg:w-full lg:flex-row flex flex-col justify-center  lg:sticky lg:top-[100px] lg:z-50  bg-white p-5 " >
 
             <div class="flex gap-5 lg:w-1/2 justify-center p-2">
-                <button class="p-3 lg:w-2/12 bg-primary rounded-[8px] font-bold">Donation</button>
-                <button class="p-3 lg:w-2/12 border border-gray-300 rounded-[8px]">History</button>
+                <button class="p-3 lg:w-2/12 bg-primary rounded-[8px] font-bold" id="donationBtn">Donation</button>
+                <button class="p-3 lg:w-2/12 border border-gray-300 rounded-[8px]" id="historyBtn">History</button>
             </div>
 
 
         </div>
 
         <!-- cards -->
+         <div id="card-container" class="w-full flex flex-col items-center   gap-10">
         <div class="w-9/12 lg:flex-row flex-col flex justify-center gap-10 border border-gray-200 p-3 rounded-lg mb-5 mt-[100px]" id="noakhaliCard">
 
             <!-- image -->
@@ -80,7 +81,7 @@
                     <div class="flex gap-3 items-center p-1 bg-gray-100 w-1/6 rounded-lg">
 
                         <img src="./assets/coin.png" alt="">
-                        <p id="donationAmountNoakhali"></p>
+                        <p id="donationAmountNoakhali">0</p>
                         <p>BDT</p>
 
 
@@ -109,7 +110,7 @@
                     <div class="flex gap-3 items-center p-1 bg-gray-100 w-1/6 rounded-lg">
 
                         <img src="./assets/coin.png" alt="">
-                        <p id="donationAmountFeni"></p>
+                        <p id="donationAmountFeni">0</p>
                         <p>BDT</p>
 
 
@@ -137,7 +138,7 @@
                     <div class="flex gap-3 items-center p-1 bg-gray-100 w-1/6 rounded-lg">
 
                         <img src="./assets/coin.png" alt="">
-                        <p id="donationAmountQuota"></p>
+                        <p id="donationAmountQuota">0</p>
                         <p>BDT</p>
 
 
@@ -153,16 +154,22 @@
 
         </div>
 
+    </div>
+
 
         <!-- history section -->
 
-        <div class="p-3 border border-gray-200 hidden">
+        <div class="p-3 border border-gray-200 hidden" id="historyDiv">
+
 
            
         </div>
 
 
     </main>
+    
+    <script src="./utilities.js"></script>
+    <script src="./index.js"></script>
     
 </body>
 </html>
