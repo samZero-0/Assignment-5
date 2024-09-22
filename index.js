@@ -40,7 +40,7 @@ donateBtn('feniDonateBtn', 'feniInput', 'donationAmountFeni', 'balance','feniCar
 
 donateBtn('quotaDonationBtn', 'quotaInput', 'donationAmountQuota', 'balance', 'quotaCard');
 
-
+// modal
 getId('closeModal').addEventListener('click',function(){
     getId('modal').classList.add('hidden');
 })
