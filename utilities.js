@@ -57,7 +57,7 @@ function donateBtn(id,input,amount,balance,card){
           
            const date = new Date(); 
             getId('historyDiv').classList.add('flex','items-center' ,'flex-col','gap-3');
-            getId('historyDiv').innerHTML += `<div class="flex flex-col gap-3 w-11/12 border border-gray-200 p-3 rounded-lg shadow-lg">
+            getId('historyDiv').innerHTML += `<div class="flex flex-col gap-3 w-11/12 border border-gray-200 p-4 rounded-lg shadow-lg">
 
              <p class="font-bold text-lg lg:text-2xl">${donationAmount} Taka is Donated for ${city}</p>
 

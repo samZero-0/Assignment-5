@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/ce960f2069.js" crossorigin="anonymous"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
+        </style>
+
+    <script src="https://cdn.tailwindcss.com"></script> 
+
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+                primary : 'rgb(180, 244, 97)',
+                navBg : 'rgb(249, 247, 243)',
+                fontPC: 'rgba(17, 17, 17, 0.7)',
+              }
+            }
+          }
+        }
+      </script>
+
+    
+</head>
+<body style="font-family: Lexend, sans-serif;" class="text-fontPC">
+    <nav class="bg-navBg w-full lg:h-[100px]  lg:flex-row  justify-between items-center gap-10 flex flex-col mt-5 lg:mt-0 lg:sticky lg:top-0 lg:z-50">
+
+        <div class="lg:flex lg:justify-end w-1/4 ">
+            <button class="bg-primary p-3 lg:w-3/12 rounded-[8px] text-lg font-bold w-11/12" id="homeBtn"><a href="./index.html">Home</a></button>
+
+        </div>
+
+        <div class="flex gap-3 items-center w-1/2 justify-center ">
+            <img src="./assets/logo.png" alt="" srcset="">
+            <p class="font-semibold lg:text-2xl text-xl">Donate Bangladesh</p>
+        </div>
+
+        <div class="flex gap-2 items-center lg:pr-10 lg:w-1/4 lg:justify-start ">
+            <img src="./assets/coin.png" alt="">
+            <p class="text-xl font-semibold" id="balance">100</p> <span class="text-xl font-semibold">BDT</span>
+        </div>
+
+
+    </nav>
+
+    <!-- accordion taken from daisyui -->
+    <div class="w-full m-3 flex items-center flex-col mt-10">
+        <div class="flex gap-2 items-center mb-4">
+            <span class="text-2xl font-bold">Important FAQ</span><i class="fa-regular fa-circle-question"></i>
+        </div>
+    <div class="collapse collapse-plus bg-base-200 w-8/12" >
+        <input type="radio" name="my-accordion-3" checked="checked" />
+        <div class="collapse-title text-xl font-medium">What is the Document Object Model (DOM)?</div>
+        <div class="collapse-content">
+          <p>The Document Object Model (DOM) is a programming interface for web documents. It represents the page so that programs can change the document structure, style, and content. The DOM represents the document as nodes and objects; that way, programming languages can interact with the page.</p>
+        </div>
+      </div>
+      <div class="collapse collapse-plus bg-base-200 w-8/12">
+        <input type="radio" name="my-accordion-3" />
+        <div class="collapse-title text-xl font-medium">How do you select an element from the DOM?</div>
+        <div class="collapse-content">
+          <p>By using  getElementById() . There also other methods such as getElementByClass, querySelector etc </p>
+        </div>
+      </div>
+      <div class="collapse collapse-plus bg-base-200 w-8/12">
+        <input type="radio" name="my-accordion-3" />
+        <div class="collapse-title text-xl font-medium">What is event delegation in the context of the DOM, and why is it useful?</div>
+        <div class="collapse-content">
+          <p>Event Delegation is the process of controlling the events on parents or child nodes. we can select one node(parent) and it will also select the child nodes</p>
+        </div>
+      </div>
+      <div class="collapse collapse-plus bg-base-200 w-8/12">
+        <input type="radio" name="my-accordion-3" />
+        <div class="collapse-title text-xl font-medium">How do you manipulate an element's attributes and styles using the DOM?</div>
+        <div class="collapse-content">
+          <p>First we have to get the element by DOM (getElementById) then we can set the class and attributes like this : element.classList.add = "your-styles" or element.classList.remove = "your-styles". Also we can manipulate attributes by setAttribute() method</p>
+        </div>
+      </div>
+
+      
+    </div>
+    <script src="./utilities.js"></script>
+    <script src="./index.js"></script>
+</body>
+</html>

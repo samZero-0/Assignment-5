@@ -46,7 +46,9 @@ getId('closeModal').addEventListener('click',function(){
 })
 
 
-
+getId('blogBtn').addEventListener('click',function(){
+    window.location.href = "./blog.html";
+})
 
 
 
