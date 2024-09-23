@@ -37,7 +37,7 @@
         <div class="lg:flex lg:justify-end w-1/4 ">
 
           
-            <button class="bg-primary p-3 lg:w-3/12 rounded-[8px] text-lg font-bold w-11/12" id="homeBtn"><a href="./index.html">Home</a></button>
+          <button class="bg-primary p-3 lg:w-3/12 rounded-[8px] text-lg font-bold w-11/12" id="homeBtn" onclick="goHome()">Home</button>
 
         </div>
 
@@ -92,5 +92,10 @@
     </div>
     <script src="./utilities.js"></script>
     <script src="./index.js"></script>
+    <script>
+      function goHome(){
+        window.location.href  = "./index.html"
+      }
+    </script>
 </body>
 </html>

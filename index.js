@@ -46,13 +46,11 @@ getId('closeModal').addEventListener('click',function(){
 })
 
 
+
 getId('blogBtn').addEventListener('click',function(){
     window.location.href = "./blog.html";
 })
 
-getId('homeBtn').addEventListener('click',function(){
-    window.location.href = "./index.html";
-})
 
 
 
